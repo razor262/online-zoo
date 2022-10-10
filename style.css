@@ -1,0 +1,1405 @@
+.header-filler {
+  display: none;
+  width: 100%;
+  height: 34px;
+  background-color: #000000;
+}
+
+.favorite_animal {
+  height: 780px;
+  background-image: url(assets/images/Giant\ Panda.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.favorite_animal_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.favorite_animal_text_and_button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  width: 500px;
+  padding-bottom: 100px;
+}
+
+.favorite_animal_text {
+  width: 500.31px;
+  height: 400px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 106.496px;
+  line-height: 75%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.favorite_animal_circle {
+  content: "";
+  position: absolute;
+  top: -74px;
+  left: -73px;
+  width: 465px;
+  height: 465px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.favorite_animal_hightlight {
+  color: #ffee2e;
+}
+
+.favorite_animal_button {
+  align-self: center;
+}
+.backstage {
+  padding: 139px 0 90px 0;
+  background-image: url(assets/images/flower_foto1.png);
+  background-position: center right 0;
+  background-repeat: no-repeat;
+}
+
+.backstage-box {
+  display: flex;
+  align-items: center;
+  gap: 87px;
+}
+
+.backstage-box-image {
+  min-width: 609px;
+  height: 403px;
+  background-image: url(assets/images/bamboo-cap.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backstage-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.backstage-box-text .subtitle {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 13px;
+}
+
+.pets {
+  padding: 88px 0 100px 0;
+  background: url(assets/images/palm_foto.png) left bottom no-repeat,
+    url(assets/images/strelitzia\ 1.png) right bottom no-repeat;
+}
+
+.pets-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.pets-slider {
+  overflow: hidden;
+}
+
+.cards-box {
+  position: relative;
+  left: -1189px;
+  display: flex;
+  gap: 30px;
+  width: 3537px;
+  transition: 1s;
+}
+
+.cards-box-non-click {
+  pointer-events: none;
+}
+
+@keyframes move-left {
+  0% {
+    left: -1189px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.cards-box-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+@keyframes move-right {
+  0% {
+    left: -1189px;
+  }
+  100% {
+    left: -2378px;
+  }
+}
+
+.cards-box-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+.slider-left,
+.slider-center,
+.slider-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  width: 1159px;
+}
+
+.cards-box-buttons {
+  position: absolute;
+  top: 402px;
+  left: -81px;
+  display: flex;
+  justify-content: space-between;
+  width: 1322px;
+}
+
+.cards-box-btn-left,
+.cards-box-btn-right {
+  width: 62px;
+  height: 62px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+}
+
+.cards-box-btn-left {
+  background-image: url(assets/icons/arrow-left.svg),
+    linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
+
+.cards-box-btn-right {
+  background-image: url(assets/icons/arrow-right.svg),
+    linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
+
+.cards-box-btn-left:hover {
+  transform: scale(1.1);
+}
+
+.cards-box-btn-right:hover {
+  transform: scale(1.1);
+}
+
+.cards-box-btn-left:active {
+  background-image: url(assets/icons/arrow-left.svg),
+    linear-gradient(113.96deg, #4b9200 1.49%, #4b9200 101.44%);
+  transform: scale(1);
+}
+
+.cards-box-btn-right:active {
+  background-image: url(assets/icons/arrow-right.svg),
+    linear-gradient(113.96deg, #4b9200 1.49%, #4b9200 101.44%);
+  transform: scale(1);
+}
+
+.cards-box-btn-left:disabled {
+  background-image: url(../../assets/icons/arrow-left.svg),
+    linear-gradient(113.96deg, #9c9c9c 1.49%, #9c9c9c 101.44%);
+  transform: scale(1);
+}
+
+.cards-box-btn-right:disabled {
+  background-image: url(../../assets/icons/arrow-right.svg),
+    linear-gradient(113.96deg, #9c9c9c 1.49%, #9c9c9c 101.44%);
+  transform: scale(1);
+}
+
+.pet-card {
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 366px;
+  height: 426px;
+  background-color: #ffffff;
+  border: 1px solid #fe9013;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.pet-card::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 364px;
+  background-color: rgba(0, 0, 0, 5);
+  z-index: 100;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pet-image {
+  width: 100%;
+  height: 368px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.pet-card:hover {
+  background-color: #fe9013;
+}
+
+.pet-card:hover .pet-image {
+  background-size: 110%;
+}
+
+.pet-card:hover::before {
+  opacity: 0.5;
+}
+
+.pet-1-image {
+  background-image: url(assets/images/Animals-cards-1.jpg);
+}
+
+.pet-2-image {
+  background-image: url(assets/images/Animals-cards-2.jpg);
+}
+
+.pet-3-image {
+  background-image: url(assets/images/Animals-cards-3.jpg);
+}
+
+.pet-4-image {
+  background-image: url(assets/images/Animals-cards-3.jpg);
+}
+
+.pet-5-image {
+  background-image: url(assets/images/Animals-cards-4.jpg);
+}
+
+.pet-6-image {
+  background-image: url(assets/images/Animals-cards-5.jpg);
+}
+
+.pet-7-image {
+  background-image: url(assets/images/Animals-cards-6.jpg);
+}
+
+.pet-description-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 8px 0 16px;
+  transition: 0.5s;
+}
+
+.pet-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pet-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pet-areal {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 100%;
+}
+
+.pet-food-logo {
+  width: 48px;
+  height: 38px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.food-grass {
+  background-image: url(assets/icons/banana-bamboo_icon.svg);
+}
+
+.food-meat {
+  background-image: url(assets/icons/meet-fish_icon.svg);
+  margin-top: -6px;
+}
+
+.pet-card:hover .pet-description-box {
+  top: -80px;
+  color: #ffffff;
+  z-index: 200;
+}
+
+.pet-card:hover .pet-name {
+  color: #ffffff;
+}
+
+.pet-card:hover .pet-food-logo {
+  opacity: 0;
+}
+
+.choose_favorite_button {
+  align-self: center;
+}
+
+.pick-and-feed {
+  padding: 69px 0 100px 0;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+}
+
+.pick-and-feed-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 41px 0 59px 0;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+
+.pick-and-feed-header {
+  text-align: center;
+  color: #fe9013;
+}
+
+.pick-and-feed-box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding-left: 99px;
+  line-height: 130%;
+}
+
+.pick-and-feed-box-text a {
+  text-decoration: underline;
+  text-decoration-color: #fe9013;
+  text-underline-offset: 7px;
+}
+
+.pick-and-feed-box-text span {
+  margin-bottom: 30px;
+}
+
+.pick-and-feed-box-text-bold {
+  font-weight: 500;
+}
+
+.pick-and-feed-box h3 {
+  margin-bottom: 10px;
+}
+
+.pick-and-feed-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.pick-and-feed-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 168px;
+  margin-bottom: 30px;
+}
+
+.pick-and-feed-image {
+  width: 168px;
+  height: 168px;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #fe9013;
+  border-radius: 5px;
+}
+
+.pick-and-feed-1-image {
+  background-image: url(assets/icons/pay.svg);
+}
+
+.pick-and-feed-2-image {
+  background-image: url(assets/icons/zoo.svg);
+}
+
+.pick-and-feed-3-image {
+  background-image: url(assets/icons/monkey.svg);
+}
+
+.pick-and-feed-arrow {
+  width: 130px;
+  background: url(assets/icons/big-arrow.svg);
+  background-position: top 60px center;
+  background-repeat: no-repeat;
+}
+
+.pick-and-feed-form {
+  align-self: center;
+}
+
+.testimonials {
+  padding: 140px 0 180px 0;
+  background-image: url(assets/images/leav_foto.png);
+  background-position: right bottom -130px;
+  background-repeat: no-repeat;
+}
+
+.testimonials-box {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.testimonials-box h3 {
+  margin-bottom: 26px;
+}
+
+.testimonials-slider {
+  overflow: hidden;
+  position: relative;
+  height: 390px;
+  padding: 1px;
+}
+
+.testimonials-cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 29px;
+  transition: 0.5s;
+}
+
+.card-back {
+  display: flex;
+  padding: 2px;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  border-radius: 20px;
+}
+
+.testimonial-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 264px;
+  height: 386px;
+  padding: 12px 13px 19px 14px;
+  background-color: #f1f3f2;
+  border-radius: 20px;
+}
+
+.testimonial-card-person {
+  display: flex;
+  gap: 10px;
+}
+
+.testimonial-card-person-logo {
+  width: 37px;
+  height: 37px;
+  background-image: url(assets/icons/user_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testimonial-card-person-2-logo {
+  background-image: url(assets/icons/user1.svg);
+}
+
+.testimonial-card-person-3-logo {
+  background-image: url(assets/icons/user2.svg);
+}
+
+.testimonial-card-person-4-logo {
+  background-image: url(assets/icons/user3.svg);
+}
+
+.testimonial-card-person-name {
+  line-height: 120%;
+  color: #000000;
+}
+
+.testimonial-card-person-data {
+  display: flex;
+  gap: 6px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.testimonial-card-text {
+  overflow: hidden;
+  max-height: 308px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.testimonials-slider-line {
+  position: relative;
+  align-self: center;
+  width: 599px;
+  height: 6px;
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 599px;
+  height: 8px;
+  background-color: #f1f3f2;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 36px;
+  width: 12.5%;
+  height: 6px;
+  background: #fe9013;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #f9804b;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  background: #4b9200;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background: #4b9200;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+}
+
+.testimonials-slider-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  border-radius: 5px;
+}
+
+.testimonials-sliderline-button {
+  width: 115.19px;
+  height: 6px;
+  background: #fe9013;
+  border-radius: 5px;
+}
+
+.testimonials_feedback_button {
+  margin: 0 auto;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 5px;
+}
+
+.testimonials-popup {
+  z-index: 700;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.testimonials-popup-box {
+  width: 264px;
+  height: 387px;
+  padding: 2px;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  box-shadow: 0 0 100px 0 black;
+  border-radius: 20px;
+}
+
+.testimonials-popup .testimonial-card {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+.testimonials-popup .testimonial-card-text {
+  max-height: 308px;
+}
+
+.testimonials-popup-button {
+  z-index: 700;
+  position: relative;
+  top: -194px;
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  background-image: url(assets/icons/x_icon_orange.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.testimonials-popup-button:hover {
+  transform: scale(1.1);
+}
+
+.testimonials-popup-button:active {
+  transform: scale(1);
+}
+
+@media (max-width: 1599px) {
+  .backstage {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .favorite_animal {
+    height: 584px;
+  }
+
+  .favorite_animal_text_and_button {
+    gap: 40.2px;
+    width: 511px;
+    padding-bottom: 47px;
+  }
+
+  .favorite_animal_text {
+    width: 400.25px;
+    height: 320px;
+    font-size: 85px;
+  }
+
+  .favorite_animal_circle {
+    top: -54px;
+    left: -3px;
+    width: 367px;
+    height: 367px;
+  }
+
+  .backstage {
+    padding: 100px 0 90px 0;
+  }
+
+  .backstage-box {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+  }
+
+  .backstage-box-image {
+    min-width: 455px;
+    height: 408px;
+  }
+
+  .pets {
+    padding: 51px 0 140px 0;
+    background: url(assets/images/palm_foto_small.png) left bottom no-repeat,
+      url(assets/images/strelitzia\ 1_small.png) right bottom no-repeat;
+  }
+
+  .cards-box {
+    position: relative;
+    left: -970px;
+    display: flex;
+    gap: 30px;
+    width: 2880px;
+    transition: 1s;
+  }
+
+  @keyframes move-left {
+    0% {
+      left: -970px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes move-right {
+    0% {
+      left: -970px;
+    }
+    100% {
+      left: -1940px;
+    }
+  }
+
+  .slider-left,
+  .slider-center,
+  .slider-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 92px 30px;
+    width: 940px;
+  }
+
+  .cards-box-buttons {
+    z-index: 200;
+    top: 369px;
+    left: 323px;
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+  }
+
+  .pet-card {
+    width: 293px;
+    height: 354px;
+  }
+
+  .pet-image {
+    height: 293px;
+  }
+
+  .choose_favorite_button {
+    margin-top: 1px;
+  }
+
+  .pick-and-feed {
+    padding: 30px 0 50px 0;
+  }
+
+  .pick-and-feed-box {
+    gap: 20px;
+    padding: 30px 0 50px 0;
+  }
+
+  .pick-and-feed-box-text {
+    gap: 10px;
+    margin-bottom: 22px;
+    padding-left: 49px;
+  }
+
+  .pick-and-feed-box-text span {
+    margin-bottom: 10px;
+  }
+
+  .pick-and-feed-box-text p {
+    padding-right: 78px;
+  }
+
+  .pick-and-feed-box h3 {
+    margin-bottom: 20px;
+  }
+
+  .pick-and-feed-cards {
+    margin-bottom: 19px;
+  }
+
+  .testimonials {
+    padding: 101px 0 140px 0;
+    background-image: url(assets/images/leav_foto_small.png);
+    background-position: right bottom -86px;
+  }
+
+  .testimonials-box h3 {
+    margin-bottom: 7px;
+  }
+
+  .testimonials-cards {
+    gap: 31px;
+    width: 1907px;
+  }
+
+  .testimonial-card {
+    width: 288px;
+    height: 386px;
+  }
+
+  .testimonial-card-text {
+    max-height: 290px;
+    padding-right: 10px;
+  }
+
+  .testimonials-slider-line {
+    width: 390px;
+    margin-bottom: 30px;
+  }
+
+  input[type="range"] {
+    width: 390px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 12.5%;
+  }
+
+  .footer-subscribe-box {
+    width: 40%;
+    margin-right: 33px;
+  }
+
+  .footer-nav {
+    margin-right: 27px;
+  }
+}
+
+@media (max-width: 980px) {
+  .favorite_animal {
+    height: 373px;
+  }
+
+  .favorite_animal_box {
+    margin-top: 123px;
+  }
+
+  .favorite_animal_text_and_button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+  }
+
+  .favorite_animal_text {
+    width: 255.64px;
+    height: 204.38px;
+    font-size: 54.2894px;
+    margin-right: -3px;
+  }
+
+  .favorite_animal_circle {
+    top: -39px;
+    left: 311px;
+    width: 237.6px;
+    height: 237.6px;
+  }
+
+  .favorite_animal_button {
+    margin-top: -8px;
+    align-self: flex-start;
+  }
+
+  .backstage {
+    padding: 60px 0 36px 0;
+    background-image: url(assets/images/flower_foto1_tablet.jpg);
+    background-position: right -5px;
+  }
+
+  .backstage-box-image {
+    display: none;
+  }
+
+  .backstage-box-text {
+    padding-right: 110px;
+  }
+
+  .backstage-box-text h2,
+  .backstage-box-text .subtitle {
+    padding-left: 4px;
+  }
+
+  .backstage-box-text .subtitle {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -2px;
+  }
+
+  .pets {
+    padding: 42px 0 100px 0;
+    background: url(assets/images/palm_foto_tablet.png) left bottom no-repeat,
+      url(assets/images/strelitzia\ 1_tablet.png) right bottom no-repeat;
+  }
+
+  .pets-box {
+    gap: 59px;
+  }
+
+  .cards-box {
+    position: relative;
+    left: -630px;
+    display: flex;
+    gap: 30px;
+    width: 2880px;
+    transition: 1s;
+  }
+
+  @keyframes move-left {
+    0% {
+      left: -630px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes move-right {
+    0% {
+      left: -630px;
+    }
+    100% {
+      left: -1260px;
+    }
+  }
+
+  .slider-left,
+  .slider-center,
+  .slider-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 92px 30px;
+    width: 600px;
+    height: 756px;
+  }
+
+  .cards-box-buttons {
+    top: 343px;
+    left: 222px;
+    width: 154px;
+  }
+
+  .pet-card {
+    width: 285px;
+    height: 332px;
+  }
+
+  .pet-description-box {
+    height: 46px;
+    padding: 0 8px 0 10.5px;
+  }
+
+  .pet-name {
+    font-size: 12.4695px;
+  }
+
+  .pet-areal {
+    font-size: 11.6901px;
+  }
+
+  .pet-food-logo {
+    width: 37.41px;
+    height: 28.84px;
+    background-size: contain;
+  }
+
+  .pick-and-feed {
+    padding: 20px 0 20px 0;
+  }
+
+  .pick-and-feed .wrapper {
+    width: 640px;
+  }
+
+  .pick-and-feed-box {
+    gap: 20px;
+    padding: 10px 20px 60px 20px;
+  }
+
+  .pick-and-feed-header {
+    font-size: 42px;
+  }
+
+  .pick-and-feed-box-text {
+    gap: 10px;
+    margin-bottom: 11px;
+    padding-left: 0;
+  }
+
+  .pick-and-feed-box-text span {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .pick-and-feed-box-text p {
+    padding-right: 0;
+  }
+
+  .pick-and-feed-box h3 {
+    margin-bottom: -1px;
+  }
+
+  .pick-and-feed-cards {
+    justify-content: flex-start;
+    gap: 42px;
+  }
+
+  .pick-and-feed-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 2px;
+  }
+
+  .card1::after,
+  .card2::after {
+    position: absolute;
+    content: "";
+    top: -37px;
+    right: -58px;
+    width: 90px;
+    height: 70px;
+    background-image: url(assets/icons/pet_arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 200;
+  }
+
+  .pick-and-feed-arrow {
+    position: absolute;
+  }
+
+  .testimonials {
+    padding: 61px 0 80px 0;
+    background-image: url(assets/images/leav_foto_tablet.png);
+    background-position: right bottom -69px;
+  }
+
+  .testimonials-box h3 {
+    margin-left: -3px;
+  }
+
+  .testimonials-slider {
+    height: 357px;
+    margin-bottom: 19px;
+  }
+
+  .testimonials-cards {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 105px;
+    padding: 12px 13px 8px 14px;
+  }
+
+  .testimonial-card-person {
+    margin-left: -5px;
+  }
+
+  .testimonials-slider-line,
+  input[type="range"] {
+    display: none;
+  }
+
+  .testimonials_feedback_button {
+    align-self: center;
+    width: 240px;
+  }
+
+  .footer-nav {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .header-filler {
+    display: block;
+  }
+
+  .favorite_animal {
+    height: 187px;
+  }
+
+  .favorite_animal_box {
+    margin-top: 81px;
+  }
+
+  .favorite_animal_text {
+    width: 128.13px;
+    height: 102.44px;
+    font-size: 28px;
+    margin-right: 0;
+  }
+
+  .favorite_animal_circle {
+    top: -19px;
+    left: 153px;
+    width: 119.09px;
+    height: 119.09px;
+  }
+
+  .favorite_animal_button {
+    position: absolute;
+    margin-top: 166px;
+  }
+
+  .backstage {
+    padding: 105px 0 36px 0;
+    background-image: url(assets/images/flower_foto1_mobile.png);
+    background-position: right top 38px;
+  }
+
+  .backstage-box-text {
+    gap: 9px;
+    padding-right: 0;
+  }
+
+  .backstage-box-text h2,
+  .backstage-box-text .subtitle {
+    padding-left: 0px;
+  }
+
+  .backstage-box-text h2 {
+    font-size: 24px;
+  }
+
+  .pets {
+    padding: 0 0 60px 0;
+    background: url(assets/images/palm_foto_mobile.png) left bottom no-repeat,
+      url(assets/images/strelitzia\ 1_mobile.png) right bottom -4px no-repeat;
+  }
+
+  .pets-box {
+    gap: 20px;
+  }
+
+  .pets-slider {
+    height: 1388px;
+  }
+
+  .cards-box {
+    position: relative;
+    left: 0;
+    display: flex;
+    gap: 30px;
+    width: 2880px;
+    transition: 1s;
+  }
+
+  .slider-center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 287px;
+    height: 1388px;
+  }
+
+  .slider-left,
+  .slider-right {
+    display: none;
+  }
+
+  .cards-box-buttons {
+    display: none;
+  }
+
+  .pick-and-feed {
+    padding: 21px 0 20px 0;
+  }
+
+  .pick-and-feed .wrapper {
+    width: 300px;
+  }
+
+  .pick-and-feed-box {
+    gap: 10px;
+    padding: 20px 0 40px 0;
+  }
+
+  .pick-and-feed-header {
+    font-size: 24px;
+  }
+
+  .pick-and-feed-box-text {
+    gap: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .pick-and-feed-box-text span {
+    margin-bottom: 0;
+    padding-right: 4px;
+    font-size: 18px;
+  }
+
+  .pick-and-feed-box-text p {
+    display: none;
+  }
+
+  .pick-and-feed-box h3 {
+    margin-bottom: 9px;
+    font-size: 24px;
+  }
+
+  .pick-and-feed-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pick-and-feed-card {
+    gap: 10px;
+    height: 222px;
+  }
+
+  .card2 {
+    margin-bottom: 9px;
+  }
+
+  .card1::after,
+  .card2::after {
+    transform: rotate(85deg);
+  }
+
+  .card1::after {
+    top: 172px;
+    right: -62px;
+  }
+
+  .card2::after {
+    top: 177px;
+    right: -62px;
+  }
+
+  .pick_and_feed_button {
+    margin-top: 7px;
+  }
+
+  .testimonials {
+    padding: 29px 0 60px 0;
+    background-image: url(assets/images/leav_foto_mobile.png);
+    background-position: right bottom -30px;
+  }
+
+  .testimonials-box {
+    gap: 10px;
+  }
+
+  .testimonials-box h3 {
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  .testimonials-slider {
+    height: 357px;
+    margin-bottom: 20px;
+  }
+}
+
+.popup-shown {
+  opacity: 1;
+}
+
+.displayed {
+  pointer-events: all;
+}
